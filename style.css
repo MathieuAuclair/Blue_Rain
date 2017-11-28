@@ -3,8 +3,9 @@
     vertical-align: top;
 }
 
-.range{
+.range, .range::-moz-range-track{
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     
     width: 250px;
@@ -19,15 +20,27 @@
     outline: none;
 }
 
-.range::-webkit-slider-thumb {
+.range::-webkit-slider-thumb{
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     width: 20px;
     height: 25px;
     background-color: #4083a9;
 }
 
+.range::-moz-range-thumb{
+    width: 20px;
+    height: 25px;
+    background-color: #4083a9;
+    border-radius: 0px;
+}
+
 .range::-webkit-slider-thumb:hover{
+    background-color: #4b91ba;
+}
+
+.range::-moz-range-thumb:hover{
     background-color: #4b91ba;
 }
 
