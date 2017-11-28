@@ -1,0 +1,55 @@
+.controlPanel{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.range{
+    -webkit-appearance: none;
+    appearance: none;
+    
+    width: 250px;
+    height: 15px;
+    border: solid 1px gainsboro;
+    background-color: rgba(240, 240, 240, 1);
+    
+    vertical-align: middle;
+}
+
+.range:focus{
+    outline: none;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 25px;
+    background-color: #4083a9;
+}
+
+.range::-webkit-slider-thumb:hover{
+    background-color: #4b91ba;
+}
+
+.controller{
+    margin-bottom: 10px;
+}
+
+.rangeLabel{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.rangeValue{
+    width: 100%;
+}
+
+.rangeValue > tbody > tr > td{
+    width: 50%;
+}
+
+.rangeValue > tbody > tr > td:last-child{
+    text-align: right;
+}
+

@@ -2,11 +2,45 @@
 <html>
 	<head>
 		<title>Blue Rain</title>
-	<head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
 	<body>
 	<!--add this to html yout html-->
 		<canvas id="canvas" height="500" width="500"></canvas>
-		<script type="text/javascript" src="main.js"></script>
+		
 	<!--don't forget to change the path to the script!-->
+        
+        <div class="controlPanel">
+            
+            <div class="controller">
+                <label class="rangeLabel" for="dropCount">Drop Count</label>
+                <input class="range" name="dropCount" id="dropCount" type="range" min="0" max="500" value="50" step="1"/>
+                <table class="rangeValue">
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>500</td>
+                        </tr>
+                    </tbody>
+                </table>  
+            </div>
+            
+            <div class="controller">
+                <label class="rangeLabel" for="dropSpeed">Drop Speed</label>
+                <input class="range" name="dropSpeed" id="dropSpeed" type="range" min="0" max="20" value="5" step="1"/>
+                <table class="rangeValue">
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>  
+            </div>
+            
+        </div>
+        
+        <script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
